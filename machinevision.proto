@@ -1,0 +1,21 @@
+
+syntax = "proto3";
+
+package machinevision;
+
+// Interface exported by the server.
+service AnalisiFrutta {
+  rpc setFruttoAnalizzato(DatiFrutto) returns(Stato) {}
+}
+
+message DatiFrutto {
+  int32 tipoFrutto = 1;
+  int32 diametro = 2;
+  int32 colore = 3;
+  int32 qualita = 4;
+  int32 soft = 5;
+}
+
+message Stato {
+  bool stato = 1;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package elettronica;
+
+service Allarme {
+  rpc setError(Error) returns(Stop) {}
+}
+
+message Error {
+  int32 errore = 1;
+}
+
+message Stop {
+  bool ferma = 1;
+}
+
+service SelezionaFrutto {
+  rpc getAnalisi(Posizion) returns(Scarto) {}
+}
+
+message Posizion {
+  int32 posizione = 1;
+}
+
+message Scarto {
+  bool scarta = 1;
+}
