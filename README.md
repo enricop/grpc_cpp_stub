@@ -1,1 +1,1 @@
-![Diagram](https://gitlab.com/ser.mac/frontend/blob/master/diagram.png)
+![Diagram](https://gitlab.com/ser.mac/frontend/raw/master/diagram.png)
